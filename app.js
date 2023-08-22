@@ -54,7 +54,6 @@ function computerPlay(yourChoice, points) {
     }
 
     console.log(points)
-
 }
 
 

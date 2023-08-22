@@ -4,36 +4,36 @@ function computerPlay(yourChoice) {
     chosen = output[chosenInd]
     if (yourChoice === 'stone'){
         if (chosen === 'stone'){
-            alert ("Tie")
+            alert ("Tie, computer chose " + chosen)
         }
         if (chosen === 'paper'){
-            alert ("You lose computer chose ")
+            alert ("You lose, computer chose " + chosen )
         }
         if (chosen === 'scissors'){
-            alert ("You Win")
+            alert ("You Win, computer chose " + chosen)
         }
     }
 
     if (yourChoice === 'scissors'){
         if (chosen === 'stone'){
-            alert ("You lose")
+            alert ("You lose, computer chose " + chosen)
         }
         if (chosen === 'paper'){
-            alert ("You Win")
+            alert ("You Win,computer chose " + chosen)
         }
         if (chosen === 'scissors'){
-            alert ("Tie")
+            alert ("Tie, computer chose " + chosen)
         }
     }
     if (yourChoice === 'paper'){
         if (chosen === 'stone'){
-            alert ("You Win")
+            alert ("You Win, computer chose " + chosen)
         }
         if (chosen === 'paper'){
-            alert ("Tie")
+            alert ("Tie, computer chose " + chosen)
         }
         if (chosen === 'scissors'){
-            alert ("You Lose")
+            alert ("You Lose, computer chose " + chosen)
         }
     }
 

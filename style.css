@@ -8,7 +8,7 @@
     border-style: solid;
     border-radius: 4px;
     font-weight: 600;
-    margin: 20;
+    margin: 20px 20px 20px 20px;
     transition-duration: 0.20s;
     margin: 20px 20px 20px 20px;
 }
@@ -18,4 +18,32 @@
     background-color: rgb(147, 146, 146);
     box-shadow: -7px 7px 7px rgba(0, 0, 0, 0.5);
 }
+
+.download:active{
+    height: 38px;
+    width: 105px;
+    margin: 22px;
+
+}
+
+.displaydiv {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(0, 115, 255, 0.836);
+    background-color: antiquewhite;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 20px;
+    line-height: 1.5;
+}
+
+.resultDiv{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(0, 115, 255, 0.836);
+    background-color: antiquewhite;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 20px;
+    line-height: 1.5;   
+}
+
 

@@ -1,3 +1,8 @@
+.setWidth{
+    height: 80px;
+    width: 200px;
+    /* margin: 20px 20px 20px 20px; */
+}
 
 .download {
     background-color: white;
@@ -8,7 +13,7 @@
     border-style: solid;
     border-radius: 4px;
     font-weight: 600;
-    margin: 20px 20px 20px 20px;
+    /* margin: 20px 20px 20px 20px; */
     transition-duration: 0.20s;
     margin: 20px 20px 20px 20px;
 }

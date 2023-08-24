@@ -1,12 +1,36 @@
 
-const Points = {
-    'Wins': 0,
-    'Loses': 0,
-    'Ties': 0
+// const Points = {
+//     'Wins': 0,
+//     'Loses': 0,
+//     'Ties': 0
+// }
+
+console.log(localStorage.getItem("points"))
+let Points = JSON.parse(localStorage.getItem('points'))
+
+if (Points === null) {
+    Points = {
+        'Wins': 0,
+        'Loses': 0,
+        'Ties': 0
+    }
 }
 
 
+function resetScore(points) {
+
+    displayDivRef = document.querySelector(".displaydiv")
+    resultDivRef = document.querySelector(".resultDiv")
+    points.Wins = 0
+    points.Loses = 0
+    points.Ties = 0
+    localStorage.removeItem('points')
+    resultDivRef.innerHTML = `You have reset the score` 
+    displayDivRef.innerHTML = `Wins: ${points.Wins} <br> Loses: ${points.Loses} <br> Ties: ${points.Ties}`
+}
+
 function computerPlay(yourChoice, points) {
+
     displayDivRef = document.querySelector(".displaydiv")
     resultDivRef = document.querySelector(".resultDiv")
 
@@ -65,11 +89,13 @@ function computerPlay(yourChoice, points) {
             resultDivRef.innerHTML = `You Lose, computer chose ${chosen}` 
             points['Loses'] += 1
         }
+
     }
 
+    localStorage.setItem('points', JSON.stringify(points));
     console.log(points)
     displayDivRef.innerHTML = `Wins: ${Points.Wins} <br> Loses: ${Points.Loses} <br> Ties: ${Points.Ties}`
-
-
+    
 }
+
 
